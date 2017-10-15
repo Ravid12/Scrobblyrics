@@ -9,10 +9,6 @@ import java.net.URL;
 import java.net.URLConnection;
 
 public class WebUtils {
-
-	public static String pageHtml = "";
-
-
 	private final static String USER_AGENT = "Mozilla/5.0";
 	
 	private final static String apiKey = "fcdddfcc2be3b398be4e1c3dc6ec3ba7";
@@ -49,8 +45,8 @@ public class WebUtils {
 	}
 
 
-	public static void pullHTML(String urlString) {
-		pageHtml = "";
+	public static String pullHTML(String urlString) {
+		String pageHtml = "";
 		try {
 			System.out.println("connecting to:");
 			System.out.println(urlString);
@@ -71,6 +67,7 @@ public class WebUtils {
 		} catch (MalformedURLException e) {
 		} catch (IOException e){
 		}
+		return pageHtml;
 	}
 	
 	public static String getSongInfo(String artist, String track) throws Exception{

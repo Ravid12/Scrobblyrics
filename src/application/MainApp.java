@@ -18,7 +18,7 @@ public class MainApp extends Application {
     @Override
     public void start(Stage primaryStage) {
         this.primaryStage = primaryStage;
-        this.primaryStage.setTitle("LastFM Lyrics");
+        this.primaryStage.setTitle("Scrobblyrics");
 
         initRootLayout();
 

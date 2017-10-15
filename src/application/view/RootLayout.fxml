@@ -23,7 +23,7 @@
       <AnchorPane prefHeight="30.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <children>
             <Label layoutX="14.0" layoutY="6.0" text="Ravid Aharon" AnchorPane.leftAnchor="14.0" />
-            <Label layoutX="644.0" layoutY="6.0" text="Copyright 2017" AnchorPane.rightAnchor="14.0" />
+            <Label layoutX="644.0" layoutY="6.0" text="2017" AnchorPane.rightAnchor="14.0" />
          </children>
       </AnchorPane>
    </bottom>
