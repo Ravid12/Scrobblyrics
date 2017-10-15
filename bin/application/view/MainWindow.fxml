@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import java.net.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="520.0" prefWidth="700.0" styleClass="back-pane" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.view.MainWindowController">
+   <children>
+      <TextField fx:id="userField" layoutX="266.0" layoutY="14.0" promptText="Last FM Username" text="mackensiegraace" AnchorPane.rightAnchor="85.0" AnchorPane.topAnchor="14.0" />
+      <Button layoutX="415.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleGetLyricsButton" text="Get Lyrics!" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="14.0" />
+      <Label fx:id="artist" layoutX="14.0" layoutY="50.0" maxWidth="400.0" AnchorPane.rightAnchor="14.0">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+      <Label fx:id="song" layoutX="250.0" layoutY="50.0" maxWidth="400.0" AnchorPane.leftAnchor="14.0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></Label>
+      <TextArea fx:id="lyrics" editable="false" layoutX="14.0" layoutY="99.0" prefHeight="430.0" prefWidth="472.0" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="76.0">
+         <font>
+            <Font name="Verdana" size="14.0" />
+         </font></TextArea>
+      <Label layoutX="466.0" layoutY="-2.0" text="LastFM Username:" AnchorPane.rightAnchor="137.0" />
+      <ImageView fx:id="albumBack" fitHeight="430.0" fitWidth="672.0" layoutX="14.0" layoutY="61.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="76.0">
+         <effect>
+            <BoxBlur height="10.0" iterations="3" width="10.0" />
+         </effect>
+      </ImageView>
+   </children>
+</AnchorPane>
