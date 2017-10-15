@@ -98,8 +98,8 @@ public class MainWindowController{
 				try {
 					// Gets lyrics and removes all special characters and HTML elements
 					lyricsT = (lyricsT.split(start))[1].split(end)[0];
-					lyricsT = lyricsT.replace("<br>","").replace("</br>","").replace("<i>","").replace("</i>","").replace("</div>","").trim();
-					lyricsT = lyricsT.replaceAll("[^A-Za-z0-9\\s.!?'\"()]+", "");
+					lyricsT = lyricsT.replace("<br>","").replace("</br>","").replace("<i>","").replace("</i>","").replace("</div>","").replace("&quot;",  "\"").trim();
+					lyricsT = lyricsT.replaceAll("[^A-Za-z0-9\\s.!?'\"()\\[\\]]+", "");
 				} catch (Exception e){
 					System.out.println("Lyrics not found on AZ lyrics...");
 					lyricsT = "Sorry! Lyrics not found on AZ lyrics...";
