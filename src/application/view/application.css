@@ -1,11 +1,70 @@
 /* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+.root {
+    -backdrop-color: rgb(41,41,41);
+    -text-background-color: rgb(25,25,25);
+    -text-color: rgb(255,255,255);
+    -feature-color: rgb(50,50,130);
+}
 
-.text-area *.text {
-    -fx-text-alignment: center;
+
+.background {
+	-fx-background-color: -backdrop-color; 
+}
+
+.label {
+	-fx-text-fill: -text-color;
+}
+
+.text-field {
+    -fx-background-color: -text-background-color;
+    -fx-text-fill: -text-color; 
+}
+
+.button {
+	-fx-background-color: -feature-color; 
+	-fx-text-fill: -text-color;
+}
+
+.combo-box {
+	-fx-background-color: -feature-color; 
+	-fx-text-fill: -text-color;
+}
+
+.combo-box .cell:selected {
+	-fx-background-color: -feature-color; 
+    -fx-text-fill: -text-color; 
 }
 
 .text-area {
-    -fx-background-color: rgba(255,255,255,0.4);
+    -fx-background-color: -text-background-color;
+    -fx-text-fill: -text-color; 
+}
+
+.text-area .increment-button ,.text-area .decrement-button {
+    -fx-background-color:transparent;
+	-fx-background-radius: 0em;
+	-fx-padding:0 0 -10 0;
+}
+
+.text-area .scroll-bar .increment-arrow,
+.text-area .scroll-bar .decrement-arrow {
+	-fx-shape: " ";	
+	-fx-padding:0;
+}
+
+.text-area .scroll-bar:vertical .track{
+     -fx-background-color: -text-background-color;
+	 -fx-border-color: -text-background-color;
+}
+
+.text-area .scroll-bar:vertical .thumb {
+    -fx-background-color: -feature-color;
+	-fx-background-insets: 2, 0, 0;
+	-fx-background-radius: 2em;
+}
+
+.text-area *.text {
+    -fx-text-alignment: center;
 }
 
 .text-area .scroll-pane {
@@ -20,3 +79,4 @@
 .text-area .scroll-pane .content{
     -fx-background-color: transparent;
 }
+
