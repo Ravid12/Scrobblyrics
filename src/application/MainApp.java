@@ -7,6 +7,7 @@ import javafx.scene.layout.BorderPane;
 
 import java.io.IOException;
 
+import application.view.MainWindowController;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.layout.AnchorPane;
 
@@ -56,6 +57,9 @@ public class MainApp extends Application {
 
             // Set window view into the center of root layout.
             rootLayout.setCenter(view);
+            
+            MainWindowController controller = loader.getController();
+            controller.setMainApp(this);
         } catch (IOException e) {
             e.printStackTrace();
         }

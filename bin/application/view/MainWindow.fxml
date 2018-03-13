@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="520.0" prefWidth="700.0" styleClass="background" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.view.MainWindowController">
+<AnchorPane prefHeight="520.0" prefWidth="700.0" styleClass="background" stylesheets="@Dark.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.view.MainWindowController">
    <children>
       <TextField fx:id="userField" layoutX="460.0" layoutY="14.0" promptText="Last FM Username" text="ravid0998" AnchorPane.rightAnchor="121.0" AnchorPane.topAnchor="14.0" />
       <Button layoutX="415.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleGetLyricsButton" prefHeight="25.0" prefWidth="106.0" styleClass="Button" text="Get Lyrics!" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="14.0" />
@@ -26,6 +26,6 @@
             <Font name="Verdana" size="14.0" />
          </font></TextArea>
       <Label layoutX="466.0" layoutY="-2.0" text="LastFM Username:" textFill="#861818" AnchorPane.rightAnchor="167.0" />
-      <ComboBox layoutX="14.0" layoutY="14.0" prefHeight="25.0" prefWidth="130.0" promptText="Themes" styleClass="Button" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="14.0" />
+      <ComboBox fx:id="cb" layoutX="14.0" layoutY="14.0" onAction="#handleThemeChange" prefWidth="150.0" styleClass="combo-box" />
    </children>
 </AnchorPane>
