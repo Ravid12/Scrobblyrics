@@ -12,7 +12,7 @@ public class FileUtils {
 	public static String readLastUser() {
 
         // The name of the file to open.
-        String fileName = "user.txt";
+        String fileName = System.getProperty("user.home") + "/user.txt";
 
         // This will reference one line at a time
         String line = null;
@@ -54,7 +54,7 @@ public class FileUtils {
 
 		try {
 
-			fw = new FileWriter("user.txt");
+			fw = new FileWriter(System.getProperty("user.home") + "/user.txt");
 			bw = new BufferedWriter(fw);
 			bw.write(user);
 

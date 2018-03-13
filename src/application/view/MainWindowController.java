@@ -1,7 +1,6 @@
 package application.view;
 
 import application.MainApp;
-import application.model.Theme;
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
 import javafx.collections.FXCollections;

@@ -1,4 +1,4 @@
-package application.model;
+package application.view;
 
 public enum Theme {
 	DARK("Dark", "rgb(41,41,41)", "rgb(25,25,25)", "rgb(255,255,255)", "rgb(50,50,130)"),
@@ -25,6 +25,6 @@ public enum Theme {
 	}
 	
 	public String getUrl(){
-		return "./application/view/" + name + ".css";
+		return (getClass().getResource( name + ".css" ).toExternalForm());
 	}
 }
